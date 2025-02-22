@@ -1,0 +1,92 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n  <groupId>WHITE</groupId>\r\n  <artifactId>WHITE</artifactId>\r\n  <packaging>jar</packaging>\r\n    <properties>\r\n        <maven.compiler.source>22</maven.compiler.source>\r\n        <maven.compiler.target>22</maven.compiler.target>\r\n    </properties>\r\n    <version>1.0-SNAPSHOT</version>\r\n  <name>WHITE-Project</name>\r\n\r\n  <dependencies>\r\n    <!-- https://mvnrepository.com/artifact/junit/junit -->\r\n<dependency>\r\n    <groupId>junit</groupId>\r\n    <artifactId>junit</artifactId>\r\n    <version>4.13.2</version>\r\n    <scope>test</scope>\r\n</dependency>\r\n   \r\n    <!-- https://mvnrepository.com/artifact/org.fitnesse/fitnesse -->\r\n    <dependency>\r\n        <groupId>org.fitnesse</groupId>\r\n        <artifactId>fitnesse</artifactId>\r\n        <version>20240219</version>\r\n    </dependency>\r\n  </dependencies>\r\n\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -13,13 +13,13 @@
+ 
+   <dependencies>
+     <!-- https://mvnrepository.com/artifact/junit/junit -->
+-<dependency>
+-    <groupId>junit</groupId>
+-    <artifactId>junit</artifactId>
+-    <version>4.13.2</version>
+-    <scope>test</scope>
+-</dependency>
+-   
++    <dependency>
++        <groupId>junit</groupId>
++        <artifactId>junit</artifactId>
++        <version>4.13.2</version>
++        <scope>test</scope>
++    </dependency>
++
+     <!-- https://mvnrepository.com/artifact/org.fitnesse/fitnesse -->
+     <dependency>
+         <groupId>org.fitnesse</groupId>
+@@ -28,4 +28,34 @@
+     </dependency>
+   </dependencies>
+ 
++    <build>
++        <plugins>
++            <!-- Maven Surefire Plugin for running tests -->
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-surefire-plugin</artifactId>
++                <version>2.22.2</version>
++            </plugin>
++            <!-- JaCoCo Plugin for code coverage -->
++            <plugin>
++                <groupId>org.jacoco</groupId>
++                <artifactId>jacoco-maven-plugin</artifactId>
++                <version>0.8.7</version>
++                <executions>
++                    <execution>
++                        <goals>
++                            <goal>prepare-agent</goal>
++                        </goals>
++                    </execution>
++                    <execution>
++                        <id>report</id>
++                        <phase>verify</phase>
++                        <goals>
++                            <goal>report</goal>
++                        </goals>
++                    </execution>
++                </executions>
++            </plugin>
++        </plugins>
++    </build>
+ </project>
+Index: .gitlab-ci.yml
+===================================================================
+diff --git a/.gitlab-ci.yml b/.gitlab-ci.yml
+new file mode 100644
+--- /dev/null	
++++ b/.gitlab-ci.yml	
+@@ -0,0 +1,19 @@
++stages:
++  - build
++  - test
++
++build:
++  stage: build
++  script:
++    - mvn compile
++
++test:
++  stage: test
++  script:
++    - mvn test
++  artifacts:
++    reports:
++      junit: target/surefire-reports/TEST-*.xml
++    coverage_report:
++      coverage_format: cobertura
++      path: target/site/jacoco/jacoco.xml

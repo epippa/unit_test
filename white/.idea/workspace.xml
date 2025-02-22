@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92359c27-44e8-46ef-9bc8-5583392b6a52" name="Changes" comment="esportazione di AuctionSystemPublic.jar" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="wr1hkpbf" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2g9ekoEZXMjx4SOJ2feTNAkLXXa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AddItemUnitTests.executor": "Run",
+    "JUnit.All in WHITE (1).executor": "Run",
+    "JUnit.All in WHITE (2).executor": "Coverage",
+    "JUnit.All in WHITE.executor": "Coverage",
+    "JUnit.AuctionPlaceBid.executor": "Run",
+    "JUnit.AuctionTDD.testAcceptBid.executor": "Run",
+    "JUnit.AuctionUT.executor": "Run",
+    "JUnit.AuctionUnitTest.executor": "Coverage",
+    "JUnit.BidTDD.executor": "Run",
+    "JUnit.Ema_UnitTests.executor": "Run",
+    "JUnit.Ema_UnitTests.testBidForAuction.executor": "Debug",
+    "JUnit.ModifyItemUnitTests.executor": "Run",
+    "JUnit.PlaceBidUnitTests.executor": "Run",
+    "JUnit.TDD in WHITE.executor": "Run",
+    "JUnit.UserPlaceBidFixture.executor": "Coverage",
+    "JUnit.UserPlaceBidFixture.testBidForAuction.executor": "Run",
+    "JUnit.UserTDD.executor": "Coverage",
+    "JUnit.UserTDD.testGetBids.executor": "Debug",
+    "JUnit.ttst in WHITE (1).executor": "Coverage",
+    "JUnit.ttst in WHITE.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Unit_test/white",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.EMANUELE\.UniBz\M2_Tools_and_Technics_for_Software_Testing\Lab\white\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ttst" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in WHITE">
+    <configuration name="All in WHITE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WHITE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuctionTDD.testAcceptBid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WHITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ttst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ttst" />
+      <option name="MAIN_CLASS_NAME" value="ttst.AuctionTDD" />
+      <option name="METHOD_NAME" value="testAcceptBid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BidTDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WHITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ttst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ttst" />
+      <option name="MAIN_CLASS_NAME" value="ttst.BidTDD" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WHITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ttst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ttst" />
+      <option name="MAIN_CLASS_NAME" value="ttst.UserTDD" />
+      <option name="METHOD_NAME" value="testGetBids" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ttst in WHITE (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WHITE" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/ttst" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in WHITE" />
+        <item itemvalue="JUnit.UserTDD" />
+        <item itemvalue="JUnit.ttst in WHITE (1)" />
+        <item itemvalue="JUnit.BidTDD" />
+        <item itemvalue="JUnit.AuctionTDD.testAcceptBid" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92359c27-44e8-46ef-9bc8-5583392b6a52" name="Changes" comment="" />
+      <created>1715114369303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715114369303</updated>
+      <workItem from="1715114374052" duration="111000" />
+      <workItem from="1715157266068" duration="218000" />
+      <workItem from="1715245557555" duration="4836000" />
+      <workItem from="1715333046059" duration="33000" />
+      <workItem from="1715778241814" duration="503000" />
+      <workItem from="1715791935918" duration="80000" />
+      <workItem from="1715792250511" duration="7504000" />
+      <workItem from="1715802480021" duration="4562000" />
+      <workItem from="1715848012352" duration="23000" />
+      <workItem from="1715868311979" duration="1556000" />
+      <workItem from="1715869987491" duration="886000" />
+      <workItem from="1716822727721" duration="502000" />
+      <workItem from="1716823650027" duration="1157000" />
+      <workItem from="1717365855617" duration="965000" />
+      <workItem from="1717404007074" duration="25604000" />
+      <workItem from="1717433689244" duration="519000" />
+      <workItem from="1717763372893" duration="4004000" />
+      <workItem from="1717767936291" duration="667000" />
+      <workItem from="1719309784584" duration="132000" />
+      <workItem from="1719317692615" duration="28000" />
+      <workItem from="1719509456780" duration="35000" />
+      <workItem from="1740250587986" duration="930000" />
+      <workItem from="1740252810923" duration="11000" />
+      <workItem from="1740253332006" duration="46000" />
+    </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1715778476644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715778476644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added some test, a test needs to be corrected">
+      <option name="closed" value="true" />
+      <created>1715800941743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715800941743</updated>
+    </task>
+    <task id="LOCAL-00003" summary="testBidForAuction, non trovo l'errore (invalid owner exception)    :(">
+      <option name="closed" value="true" />
+      <created>1715802166175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715802166175</updated>
+    </task>
+    <task id="LOCAL-00004" summary="up to date1">
+      <option name="closed" value="true" />
+      <created>1715806369241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715806369241</updated>
+    </task>
+    <task id="LOCAL-00005" summary="version 1.0">
+      <option name="closed" value="true" />
+      <created>1715870330727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715870330727</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&#10;added AuctionSystemPublic.jar">
+      <option name="closed" value="true" />
+      <created>1717366757485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717366757485</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pom.xml adjustment">
+      <option name="closed" value="true" />
+      <created>1717404944188</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717404944188</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added AuctionSystemPublic.jar (passaggio d, degli step preliminari)">
+      <option name="closed" value="true" />
+      <created>1717406592974</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717406592974</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added coverage badge (step 2.a">
+      <option name="closed" value="true" />
+      <created>1717410330750</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717410330750</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added the comparison of AuctionSystemPublic.jar and WHITE's original code.">
+      <option name="closed" value="true" />
+      <created>1717415099946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717415099946</updated>
+    </task>
+    <task id="LOCAL-00011" summary="step 3.b">
+      <option name="closed" value="true" />
+      <created>1717421791652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717421791653</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Test Driven Development with Assertion first: first commit for each test case with all its assertions. Then commit for each assertion  you have implemented. Create an issue for each test case.">
+      <option name="closed" value="true" />
+      <created>1717425378636</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717425378636</updated>
+    </task>
+    <task id="LOCAL-00013" summary=".">
+      <option name="closed" value="true" />
+      <created>1717428942136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717428942136</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added Badge">
+      <option name="closed" value="true" />
+      <created>1717429934732</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717429934732</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commented the TDD methods">
+      <option name="closed" value="true" />
+      <created>1717432699134</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717432699134</updated>
+    </task>
+    <task id="LOCAL-00016" summary="esportazione di AuctionSystemPublic.jar">
+      <option name="closed" value="true" />
+      <created>1717432867183</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717432867183</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added some test, a test needs to be corrected" />
+    <MESSAGE value="testBidForAuction, non trovo l'errore (invalid owner exception)    :(" />
+    <MESSAGE value="up to date1" />
+    <MESSAGE value="version 1.0" />
+    <MESSAGE value="&#10;added AuctionSystemPublic.jar" />
+    <MESSAGE value="pom.xml adjustment" />
+    <MESSAGE value="added AuctionSystemPublic.jar (passaggio d, degli step preliminari)" />
+    <MESSAGE value="added coverage badge (step 2.a" />
+    <MESSAGE value="added the comparison of AuctionSystemPublic.jar and WHITE's original code." />
+    <MESSAGE value="step 3.b" />
+    <MESSAGE value="Test Driven Development with Assertion first: first commit for each test case with all its assertions. Then commit for each assertion  you have implemented. Create an issue for each test case." />
+    <MESSAGE value="added Badge" />
+    <MESSAGE value="commented the TDD methods" />
+    <MESSAGE value="." />
+    <MESSAGE value="esportazione di AuctionSystemPublic.jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="esportazione di AuctionSystemPublic.jar" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/white$All_in_WHITE.ic" NAME="All in WHITE Coverage Results" MODIFIED="1717432789751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/white$ttst_in_WHITE__1_.ic" NAME="ttst in WHITE (1) Coverage Results" MODIFIED="1717428624528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/white$AuctionUnitTest.ic" NAME="AuctionUnitTest Coverage Results" MODIFIED="1715869052293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ttst.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/white$UserPlaceBidFixture.ic" NAME="UserPlaceBidFixture Coverage Results" MODIFIED="1715869154183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ttst.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/white$All_in_WHITE__2_.ic" NAME="All in WHITE (2) Coverage Results" MODIFIED="1715869238064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/white$UserTDD.ic" NAME="UserTDD Coverage Results" MODIFIED="1717428813874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ttst.*</FILTER>
+    </SUITE>
+  </component>
+</project>
