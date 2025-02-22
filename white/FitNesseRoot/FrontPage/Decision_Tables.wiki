@@ -1,0 +1,69 @@
+!define TEST_SYSTEM {fit}
+!path ..\src\main\java\
+
+! Items to add on Auction
+The test cases regards the AT addItem. Five items are used. They have the following properties:
+- category Id: String, max.15 chars
+- bid increment: positive Integer, multiple of 10, min. 20€
+- item's description: String, min.15 max.50 chars
+- Expected Result: String, Success or Failure.
+
+!| com.example.FixtureAddItemTest 		         |
+| categoryID | bidIncrement | description        | result?  |
+| WEARABLE   | 20           | Last-model of shoes| Success  |
+| FOOD       | 30           | Creamy cheeseburger| Success  |
+| WEARABLE   | 40           | Stylish sunglasses | Success  |
+| WEARABLE   | 25           | Huawei smartwatch  | Success  |
+| FLORA      | 15           | cactus             | Failure  |
+
+The second item regards the Food category, while the first, third, and fourth items regard the category Wearable.
+They have Success as Expected Result, since the respect the bid increment, the item's description's length, and the category id length.
+the fifth result is Failure, since the bid increment has to start from 20, and it has 15.
+
+!Process placed Bid
+The test cases regard the AT addBid. Four items are used. They have following properties:
+- auctionID: long
+- last_bidded_price (€): positive Integer
+- bid increment: positive Integer, multiple of 10, min. 20€
+- result: String, Success or Failure
+
+!| com.example.FixtureAddBidTest	|
+| auctionID | last_bidded_price     | bidIncrement       	| result?        	|
+| 1			| 50					| 20			   		| Success			|
+| 2			| 50 					| -1 			   		| Failure			|
+| -1		| -100					| 100					| Failure			|
+| 4 		| 100					| 19					| Failure			|
+
+The first item regards the ID of the current Auction, the second item is the last bidded price on the item,
+while the third item is the increment of the bid, so just the placed bid.
+The Tests should fail when the increment of bid is a negative number and when it's under 20€. Additionally, if other items are incorrect it should also fails.
+
+! Items to modify
+The test cases regards the AT modifyItem. Five items are used. They have the same properties as addItem:
+- category Id: String, max.15 chars
+- bid increment: positive Integer, multiple of 10, min. 20€
+- item's description: String, min.15 max.50 chars
+- Expected Result: String, Success or Failure.
+
+!| com.example.FixtureModifyItemTest 		     |
+| categoryID | bidIncrement | description        | result?  |
+| WEARABLE   | 20           | Last-model of shoes| Success  |
+| WEARABLE   | 30           | Creamy cheeseburger| Success  |
+| WEARABLE   | -40          | Stylish sunglasses | Failure  |
+| WEARABLE   | 25           | Huawei smartwatch  | Success  |
+| FLORA      | 15           | cactus             | Failure  |
+
+
+
+!Place a Bid
+In the first colums there are the auctionIDs of the auctions in which we want to place a bid.
+The auctionID has to be a positive integer. In the second column there are the increment, they have to be
+positive integer, greater or equel to 20, and multiple of 10.
+
+!| com.example.FixturePlaceBid 		   |
+| auctionID  | bidIncrement | result?  |
+| 1          | 20           | Success  |
+| 2          | 30           | Success  |
+| 0          | 40           | Success  |
+| -1         | 25           | Success  |
+| 4          | 15           | Failure  |

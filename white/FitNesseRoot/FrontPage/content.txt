@@ -1,0 +1,53 @@
+! Items to add on Auction!-
+-!The test cases regards the AT addItem. 5 items are used. They have the following properties:
+
+ * category Id: String, max.15 chars
+ * increment of price (bid increment): Integer, multiple of 10, min. 20€
+ * item's description: String, min.15 max.50 chars
+ * Expected Result: String, Success or Failure.
+
+!| DT: addItemTest |
+| categoryID | increment of price (€) | item's description | Expected Result |
+| WEARABLE | 20 | Last-model of shoes | Success |
+| FOOD | 30 | Creamy cheeseburger | Success |
+| WEARABLE | 40 | Stylish sunglasses | Success |
+| WEARABLE | 25 | Huawei smartwatch | Success |
+| FLORA | 15 | cactus | Failure |
+
+The second item regards the Food category, while the first, third, and fourth items regard the category Wearable. They have Success as Expected Result, since the respect the bid increment, the item's description's length, and the category id length.!-
+-!the fifth result is Failure, since the bid increment has to start from 20, and it has 15.
+
+!4 '''Decision Table for placeBidTest: (Manuel)'''
+The test cases are based on the AT placeBid of the User class with following properties:
+
+ * auctionId: Long, The id of an auction that has to be started and not expired
+ * price: Double, should be valid for the selected bid (Higher than the last bid)
+ * Expected result: Boolean (True for success), Exception
+
+!| DT: placeBidTest |
+| auctionId | price | Expected Result |
+| 1 | 50 | true |
+| 2 | 100 | true |
+| 2 | 40 | LowPriceException |
+| 3 | 200 | AuctionExpiredException |
+| 4 | 150 | NotOpenedAuctionException |
+| -1 | 80 | InvalidAuctionIdException |
+
+
+!4 '''Decision Table for addBid: (Alessandro)'''
+!Process placed Bid
+The test cases regard the AT addBid. 4 items are used. They have following properties:
+ * AuctionID: long
+ * last bidded price: Double
+ * increment of bid: Double, limit at 1.79769313486231570e+308d, multiple of 10 and min 20€
+ * expected Result: Boolean, True or False
+
+!|DT: addBid|
+| AuctionID | last bidded price (€) | increment of bid (€) 	| Expected Result 	|
+| 1			| 50					| 20			   		| True				|
+| 2			| 50 					| -1 			   		| False				|
+| -1		| -100					| 100					| False				|
+| 4 		|100					| 19					| False				|	
+
+The first item regards the ID of the current Auction, the second item is the last bidded price on the item, while the third item is the increment of the bid, so just the placed bid.
+The Tests should fail when the increment of bid is a negative number and when it's under 20€. Additionally, if other items are incorrect it should also fails.
