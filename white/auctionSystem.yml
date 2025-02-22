@@ -1,0 +1,30 @@
+stages:
+  - build
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
+
+build:
+  stage: build
+  script:
+    - mvn clean compile
+
+unit_test:
+  stage: test
+  script:
+    - mvn test -PUnitTest
+
+integration_test:
+  stage: test
+  script:
+    - mvn test -PIntegrationTest
+
+unit_and_integration_tests:
+  stage: test
+  script:
+    - mvn test -PUnitTest -PIntegrationTest

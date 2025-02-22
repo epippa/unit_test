@@ -1,0 +1,36 @@
+image: maven:latest
+
+stages:
+  - build
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
+
+build:
+  stage: build
+  script:
+    - mvn clean compile
+
+unit_test:
+  stage: test
+  script:
+    - mvn test -PUnitTest
+
+integration_test:
+  stage: test
+  script:
+    - mvn verify -PIntegrationTest
+
+  artifacts:
+    paths:
+      - target/site/jacoco/
+    reports:
+      junit: target/surefire-reports/*.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: target/site/jacoco/jacoco.xml

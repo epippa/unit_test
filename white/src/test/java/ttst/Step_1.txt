@@ -1,0 +1,46 @@
+Step 1: Explore the space of inputs for each DT of Assignemnt 2. What are the valid/invalid, border, default or typical input values?
+
+**INPUT SPACES**
+PlaceBid: AuctionID, BidIncrement
+	- Invalid Borders = (auctionID < 1) || (bidIncrement < 20) || (bidIncrement%10 != 0)
+
+AddItem: CategoryID, BidIncrement, Description
+	- Invalid Borders = (categoryID.length > 15) || (bidIncrement < 20) || (bidIncrement%10 != 0) || (description.length() < 15) || (description.length() > 50)
+
+ModifyItem: CategoryID, BidIncrement, Description
+	- Invalid Borders = (categoryID.length > 15) || (bidIncrement < 20) || (bidIncrement%10 != 0) || (description.length() < 15) || (description.length() > 50)
+
+AddBid: AuctionID, BidIncrement, Last Bidded Price
+	- Invalid Borders = (auctionID < 1) || (bidIncrement < 20) || (bidIncrement%10 != 0) || (last_bidded_price < 20) || (last_bidded_price%10 != 0)
+
+
+
+Step 3: Write the UTs according to the test cases of your Fitnesse DTs
+
+**TEST CASES**
+
+**PlaceBidUnitTests.java
+PlaceBid1 -> Auction
+PlaceBid2 -> Auction
+PlaceBid3 -> Auction
+PlaceBid4 -> Auction
+testFixtureAddBid1 -> Fixture PlaceBid
+testFixtureAddBid2 -> Fixture PlaceBid
+testFixtureAddBid3 -> Fixture PlaceBid
+testBidForAuction -> Seller
+
+**AuctionUnitTests.java**
+testStartPrice1 -> Auction => Start & Next Price
+testStartPrice2 -> Auction => Start & Next Price
+testPriceValidity1 -> Auction => checkPriceValidity
+testPriceValidity2 -> Auction => checkPriceValidity
+
+**AddItemUnitTests.java**
+testFixtureAddItem1 -> Fixture AddItem
+testFixtureAddItem2 -> Fixture AddItem
+testFixtureAddItem3 -> Fixture AddItem
+testFixtureAddItem4 -> Fixture AddItem
+testFixtureAddItem5 -> Fixture AddItem
+
+**ModifyItemUnitTests.java**
+testFixtureModifyItem -> Fixture ModifyItem
